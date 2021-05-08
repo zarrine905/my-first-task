@@ -55,9 +55,12 @@ for i in range(len(vpos)):
 	for j in range(len(bstart)):
 		if ((vpos[i] >= bstart[j]) and (vpos[i]<= bend[j])):
 			#print(dfrows[i])
-			outF.write(str(dfrows[i]))
-			outF.write("\n")
+			#outF.write(str(dfrows[i]))
+			#outF.write("\n")
 			#print (bchrom[j],"\t",bstart[j], "\t", bend[j], "\t", vchrom[i],"\t",vpos[i])
+			list_val = dfrows[i]
+			outF.write(", ".join(map(str, list_val)))
+			outF.write("\n")
 			
 			
 
