@@ -1,7 +1,7 @@
 # my-first-task
 **Introduction**
-To intersect user-input .vcf and user-input .bed file.
-After intersecting, the matched rows of .vcf are printed in user-defined output(.vcf) file.
+To intersect user-defined .vcf and user-defined .bed file through terminal.
+After intersection (checks whether the position in .vcf lies in the range of start and end position of .bed file), the matched rows of .vcf are printed in user-defined output(.vcf) file.
 
 **Prerequisites**
 
