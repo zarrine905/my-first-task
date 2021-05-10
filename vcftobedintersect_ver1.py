@@ -16,13 +16,7 @@ header=[]
 for line in flist:
 	if line.startswith("##") or line.startswith("#"):
 		header.append(line)
-myheader = 	"".join(map(str, header))	
-#print(myjoin1)
-#outF.write(myjoin1)
-
-
-
-
+myheader = "".join(map(str, header))	
 
 
 # Create the parser
@@ -35,10 +29,6 @@ parser.add_argument("-o", help = "Print results in outfile.Give .vcf extension "
 # Parse the argument
 args = parser.parse_args()
 
-
-#print('VCF file:', args.input1)
-#print('BED file:', args.input2)
-#print('OUT:', args.output)
 f1 = open(args.a)
 f2 = open(args.b)
 outF= open(args.o, 'w') 
@@ -52,14 +42,9 @@ data1 = pd.read_csv(f1, sep ='\t', skiprows = 22)
 #reading rows into list
 dfrows = data1.to_numpy().tolist()
 
-#print(dfrows)
-
-
 # converting column data to list
 vchrom = data1["#CHROM"].tolist()
 vpos = data1["POS"].tolist()
-
-
 
 #read .BED file
 data2 = pd.read_csv(f2, sep ='\t', header = None, usecols = [0,1,2])
@@ -81,13 +66,12 @@ for i in range(len(vpos)):
 			#print (myjoin)
 			outF.write(myjoin+"\n") 
 			
-			
 			#print(", ".join(map(str, list_val)))    #print list without square brackets and single quotes
 			#print("\n")
 			#outF.write(", ".join(map(str, list_val)))
 			#outF.write("\n")
 			
-			#print (bchrom[j],"\t",bstart[j], "\t", bend[j], "\t", vchrom[i],"\t",vpos[i])
+			#print (bchrom[j],"\t",bstart[j], "\t", bend[j], "\t", vchrom[i],"\t",vpos[i]) #To output as .bed file
 
 
 			
