@@ -66,11 +66,6 @@ for i in range(len(vpos)):
 			#print (myjoin)
 			outF.write(myjoin+"\n") 
 			
-			#print(", ".join(map(str, list_val)))    #print list without square brackets and single quotes
-			#print("\n")
-			#outF.write(", ".join(map(str, list_val)))
-			#outF.write("\n")
-			
 			#print (bchrom[j],"\t",bstart[j], "\t", bend[j], "\t", vchrom[i],"\t",vpos[i]) #To output as .bed file
 
 
