@@ -24,6 +24,10 @@ import pandas as pd
 
 import argparse
 
+To use the script:-
+
+python [scriptname].py --help
+
 
 
 
