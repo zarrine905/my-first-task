@@ -13,9 +13,9 @@ Before you continue, ensure you have met the following requirements:
 **Installation**
 pandas and argparse are easiest to use when installed with pip
 
-pip install pandas
+>pip install pandas
 
-pip install argparse
+>pip install argparse
 
 **Usage**
 To use pandas and argparse we need to import them.
