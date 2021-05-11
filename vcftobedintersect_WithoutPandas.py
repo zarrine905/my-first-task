@@ -33,10 +33,6 @@ for bline in blines:
 	#print(bline[2])
 	bstart.append(bline[1])
 	bend.append(bline[2])
-#print(bstart)
-#print(bend)
-
-
 
 for i in range(len(vpos)):
 	for j in range(len(bstart)):
