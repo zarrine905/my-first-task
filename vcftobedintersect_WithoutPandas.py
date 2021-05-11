@@ -14,17 +14,12 @@ for vline in lines:
 	if ("#" in vline):
 		header += vline + "\n"
 	elif ("#" not in vline):
-		#vpos.append(vline)
-		#print (line)
 		vline = vline.split()	#To read columns of vcf 
 		vpos.append(vline[1])
 		rowlist.append(vline)   #To read lines/rows of vcf into list
 
 #print(header)
 f1.write(header)
-#print(vpos)
-#print(rowlist[0])
-
 
 #To read columns of .bed into list
 fh = open("example.bed", "r")
